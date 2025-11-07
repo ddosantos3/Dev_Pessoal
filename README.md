@@ -215,5 +215,3 @@ O `docker-compose.yml` já monta o volume e injeta o `.env`. A API fica em `http
 - `overwrite` é falso por padrão para evitar perda de arquivos.  
 - Verifique sempre os arquivos gerados antes de publicar em produção.  
 - Use tokens do GitHub (PAT) e configure o Credential Manager para um único usuário para evitar prompts repetidos.  
-
-Pronto! Agora o agente, o frontend e o backend estão documentados, integrados e com histórico persistido para facilitar revisões. Basta conversar com o bot, abrir os arquivos salvos em `data/conversas` e continuar iterando.  
