@@ -1,0 +1,18 @@
+[project]
+name = "barbearia-landingpage"
+version = "0.1.0"
+description = "Landing page de agendamento para barbearia"
+authors = [
+    { name="Seu Nome", email="seu@email.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]

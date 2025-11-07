@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+# Frontend
+node_modules/
+src/app/frontend/quest-talk-gui/dist/
+
+# Conversas geradas
+data/conversas/
+
+# Env / misc
+.env
+.env.local
+.DS_Store

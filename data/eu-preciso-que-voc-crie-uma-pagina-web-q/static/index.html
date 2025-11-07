@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia - Agende seu horário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Barbearia Estilo</h1>
+            <p>Agende seu horário com facilidade!</p>
+        </header>
+        <form id="agendamento-form" aria-label="Formulário de agendamento">
+            <label for="profissional">Escolha o profissional:</label>
+            <select id="profissional" name="profissional" required>
+                <option value="">Selecione</option>
+                <option value="joao">João</option>
+                <option value="maria">Maria</option>
+                <option value="carlos">Carlos</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required min="" />
+
+            <label for="horario">Horário:</label>
+            <select id="horario" name="horario" required>
+                <option value="">Selecione</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+            </select>
+
+            <button type="submit">Agendar</button>
+        </form>
+        <div id="mensagem" role="status" aria-live="polite"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Barbearia Estilo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+[project]
+name = "agente-dev"
+version = "0.1.0"
+description = "Agente pessoal que gera projetos completos a partir de conversa"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "pydantic>=2.8.0",
+  "pydantic-settings>=2.4.0",
+  "httpx>=0.27.0",
+  "python-dotenv>=1.0.1",
+  "orjson>=3.10.7",
+  "loguru>=0.7.2",
+  "jinja2>=3.1.4",
+  "gitpython>=3.1.43",
+  "typer>=0.12.5",
+]
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+strict_optional = true

@@ -1,0 +1,3 @@
+
+- O frontend estático está em `static/`.
+- O backend serve apenas API e healthcheck.
